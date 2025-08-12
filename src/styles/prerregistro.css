@@ -1,0 +1,93 @@
+/* archivo: src/styles/prerregistro.css */
+
+.preregistro-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: #f0fff4; /* verde muy claro */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 128, 64, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #155724;
+}
+
+.preregistro-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+}
+
+.preregistro-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.preregistro-container input[type="text"],
+.preregistro-container input[type="email"],
+.preregistro-container input[type="tel"] {
+  padding: 0.8rem;
+  border: 2px solid #a5d6a7; /* verde claro */
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.preregistro-container input[type="text"]:focus,
+.preregistro-container input[type="email"]:focus,
+.preregistro-container input[type="tel"]:focus {
+  border-color: #388e3c; /* verde medio */
+  outline: none;
+  box-shadow: 0 0 5px #81c784;
+}
+
+.preregistro-container button[type="submit"] {
+  padding: 0.8rem;
+  background-color: #66bb6a; /* verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.preregistro-container button[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #842029;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.btn-back {
+  margin-top: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #2e7d32;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.btn-back:hover {
+  color: #145214;
+}

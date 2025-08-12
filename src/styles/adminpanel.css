@@ -1,0 +1,203 @@
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-list th,
+.user-list td {
+  padding: 0.8rem;
+  border: 1px solid #a5d6a7;
+  text-align: left;
+}
+
+.user-list th {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.user-list tr:nth-child(even) {
+  background-color: #c8e6c9;
+}
+
+.btn-seguimiento {
+  padding: 0.5rem 0.8rem;
+  background-color: #42a5f5;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-seguimiento:hover {
+  background-color: #1e88e5;
+}
+
+/* ----- Paleta y variables ----- */
+:root{
+  --green: #66bb6a;
+  --green-dark: #388e3c;
+  --green-darker: #2e7d32;
+  --muted-green: #e6f2e6;
+  --blue: #1e88e5;
+  --blue-dark: #1565c0;
+  --text-on-dark: #ffffff;
+}
+
+/* ----- Navegación (Aspirantes / Alumnos) ----- */
+.admin-nav button {
+  background-color: var(--muted-green);
+  border: 2px solid var(--green);
+  color: var(--green-darker);
+  padding: 0.7rem 1.3rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.22s ease, color 0.22s ease, transform 0.12s ease, box-shadow 0.22s ease;
+  min-width: 140px;
+  box-shadow: 0 3px 6px rgba(46,125,50,0.08);
+}
+
+.admin-nav button:hover:not(:disabled) {
+  background-color: var(--green);
+  color: var(--text-on-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(102,187,106,0.18);
+}
+
+.admin-nav button:focus {
+  outline: 3px solid rgba(102,187,106,0.18);
+  outline-offset: 3px;
+}
+
+.admin-nav button.active,
+.admin-nav button:disabled {
+  background-color: var(--green-darker);
+  color: var(--text-on-dark);
+  border-color: var(--green-darker);
+  cursor: default;
+  transform: none;
+  box-shadow: 0 6px 14px rgba(46,125,50,0.18);
+}
+
+/* ----- Botón Cerrar sesión ----- */
+.btn-logout {
+  background-color: var(--green);
+  color: var(--text-on-dark);
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.12s ease, box-shadow 0.2s ease;
+}
+
+.btn-logout:hover {
+  background-color: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(56,142,60,0.18);
+}
+
+.btn-logout:focus {
+  outline: 3px solid rgba(56,142,60,0.18);
+  outline-offset: 3px;
+}
+
+/* ----- Botón Dar seguimiento (tabla) ----- */
+.btn-seguimiento {
+  background-color: var(--blue);
+  color: var(--text-on-dark);
+  border: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.18s ease, transform 0.12s ease;
+}
+
+.btn-seguimiento:hover {
+  background-color: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+.btn-seguimiento:focus {
+  outline: 3px solid rgba(30,136,229,0.18);
+  outline-offset: 3px;
+}
+
+/* ----- Tamaños responsivos para pantallas pequeñas ----- */
+@media (max-width: 700px) {
+  .admin-nav {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .admin-nav button {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .btn-seguimiento {
+    padding: 0.5rem 0.8rem;
+  }
+}
+.admin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header {
+  margin: 0;
+}
+
+.btn-logout {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: #c9302c;
+}
+
+.admin-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.btn-nav {
+  background-color: #5cb85c;
+  border: 2px solid #4cae4c;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-nav.active {
+  background-color: #4cae4c;
+}
+
+.btn-seguimiento {
+  background-color: #0275d8;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-seguimiento:hover {
+  background-color: #025aa5;
+}
+

@@ -1,0 +1,157 @@
+/* home.css */
+
+.home-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-header img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.home-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #006837; /* verde similar al logo */
+}
+
+.btn-login {
+  background-color: #4CAF50; /* verde */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 160px;
+}
+
+.btn-login:hover {
+  background-color: #357a38;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.carrera-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.carrera-item {
+  background-color: #e6f2e6; /* verde claro */
+  margin-bottom: 0.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #004d00;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+/* home.css */
+
+/* Botones de selección de carrera */
+.carrera-btn {
+  background-color: #4caf50; /* verde similar btn-login */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 0.6rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(76, 175, 80, 0.4);
+  text-align: center;
+}
+
+.carrera-btn:hover {
+  background-color: #357a38; /* verde oscuro hover */
+  box-shadow: 0 5px 12px rgba(53, 122, 56, 0.6);
+}
+
+.carrera-btn.active {
+  background-color: #27632a; /* verde más oscuro para activo */
+  box-shadow: 0 0 12px 2px #27632a;
+  cursor: default;
+}
+
+/* Información detallada de la carrera */
+.carrera-info {
+  background-color: #e6f2e6; /* verde claro, consistente con carrera-item */
+  padding: 1.5rem 2rem;
+  margin-top: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 77, 0, 0.15);
+  color: #004d00;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.carrera-info h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #006837;
+}
+
+.carrera-info section {
+  margin-bottom: 1.2rem;
+}
+
+.carrera-info h3 {
+  font-weight: 600;
+  color: #27632a;
+  margin-bottom: 0.4rem;
+}
+
+/* Botón para pre-registro dentro de la info */
+.btn-preregistro {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  margin-top: 1.5rem;
+  margin: 1.5rem auto 0 auto; /* centra horizontalmente */
+  display: block;
+  max-width: 320px;
+  text-align: center;;
+  box-shadow: 0 5px 8px rgba(76, 175, 80, 0.6);
+}
+
+.btn-preregistro:hover {
+  background-color: #357a38;
+  transform: scale(1.05);
+}
+
+.btn-preregistro:active {
+  transform: scale(0.97);
+}
