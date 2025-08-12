@@ -31,6 +31,20 @@ const materiasPorCarrera = {
     { nombre: "Topografía", horario: "13:30 - 15:00" },
     { nombre: "Inglés Técnico", horario: "15:00 - 16:00" },
   ],
+  "Ingeniería Química": [
+    { nombre: "Química General", horario: "08:00 - 09:30" },
+    { nombre: "Matemáticas I", horario: "09:30 - 11:00" },
+    { nombre: "Física I", horario: "11:00 - 12:30" },
+    { nombre: "Laboratorio de Química", horario: "13:30 - 15:00" },
+    { nombre: "Inglés Técnico", horario: "15:00 - 16:00" },
+  ],
+  "Ingeniería en Industrias Alimentarias": [
+    { nombre: "Química de Alimentos", horario: "08:00 - 09:30" },
+    { nombre: "Microbiología de Alimentos", horario: "09:30 - 11:00" },
+    { nombre: "Bioquímica", horario: "11:00 - 12:30" },
+    { nombre: "Tecnología de Procesos Alimentarios", horario: "13:30 - 15:00" },
+    { nombre: "Inglés Técnico", horario: "15:00 - 16:00" },
+  ],
   // Agrega más carreras y materias aquí según necesites
 };
 

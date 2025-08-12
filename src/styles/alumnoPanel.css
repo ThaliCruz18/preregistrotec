@@ -110,3 +110,28 @@
 .alumno-panel-container > button:active {
   transform: scale(0.97);
 }
+/* Estilo para la lista desplegable de talleres */
+.alumno-panel-container select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #4caf50;
+  border-radius: 6px;
+  background-color: white;
+  color: #27632a;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.alumno-panel-container select:focus {
+  outline: none;
+  border-color: #27632a;
+  box-shadow: 0 0 8px rgba(39, 99, 42, 0.6);
+}
+
+.alumno-panel-container select option:disabled {
+  color: #a5d6a7; /* verde más claro para opciones deshabilitadas */
+}

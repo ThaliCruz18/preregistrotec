@@ -119,11 +119,15 @@ export default function AlumnoPanel() {
       <h1>Bienvenido, {alumno.nombre}</h1>
       <p>Carrera: {alumno.carrera || "No disponible"}</p>
       <p>Número de cuenta: {alumno.numeroCuenta || alumno.password || "No disponible"}</p>
-
-      <h2>Materias inscritas</h2>
-      <ul>{(alumno.materias || []).map((mat, idx) => <li key={idx}>{mat}</li>)}</ul>
-
-      <h2>Talleres inscritos</h2>
+<h2>Materias inscritas</h2>
+<ul>
+  {(alumno.materias || []).map((mat, idx) => (
+    <li key={idx}>
+      {mat.nombre} - {mat.horario} {/* Corregido aquí */}
+    </li>
+  ))}
+</ul>
+ <h2>Talleres inscritos</h2>
       <ul>{talleresInscritos.map((taller, idx) => <li key={idx}>{taller}</li>)}</ul>
 
       <h2>Talleres disponibles</h2>
